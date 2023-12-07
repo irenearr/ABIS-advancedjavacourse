@@ -10,8 +10,6 @@ import be.abis.exercise.repository.MemoryPersonRepository;
 import be.abis.exercise.repository.PersonRepository;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
 import java.time.format.TextStyle;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
@@ -20,7 +18,6 @@ import java.util.Locale;
 public class TestMain {
 
     public static void main(String[] args) throws PersonAlreadyExistsException {
-
         PersonRepository pr = new MemoryPersonRepository();
         List<Person> persons = pr.findAllPersons();
 
@@ -90,6 +87,5 @@ public class TestMain {
 
         LocalDate nextBirthday = LocalDate.of(2024, 10, 15);
         System.out.println("My next birthday will be in " + ChronoUnit.DAYS.between(LocalDate.now(),nextBirthday) + " days.");
-
     }
 }

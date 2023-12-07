@@ -6,6 +6,7 @@ import be.abis.exercise.exception.PersonNotFoundException;
 import be.abis.exercise.model.Address;
 import be.abis.exercise.model.Company;
 import be.abis.exercise.model.Person;
+import org.apache.log4j.Logger;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
